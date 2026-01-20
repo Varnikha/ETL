@@ -1,0 +1,2 @@
+This project follows a structured ETL (Extract, Transform, Load) pipeline using Python.
+First, the raw housing dataset was extracted from a CSV file. During the transformation stage, missing values were handled appropriately, categorical variables were standardized and encoded, and data types were corrected to make the dataset suitable for analysis. Binary features such as amenities were converted into numerical form, and irrelevant inconsistencies were removed. Finally, the cleaned and transformed dataset was saved as a new CSV file for further analytics and modeling.
