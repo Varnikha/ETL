@@ -1,2 +1,28 @@
-This project follows a structured ETL (Extract, Transform, Load) pipeline using Python.
-First, the raw housing dataset was extracted from a CSV file. During the transformation stage, missing values were handled appropriately, categorical variables were standardized and encoded, and data types were corrected to make the dataset suitable for analysis. Binary features such as amenities were converted into numerical form, and irrelevant inconsistencies were removed. Finally, the cleaned and transformed dataset was saved as a new CSV file for further analytics and modeling.
+# Python-Based ETL Pipeline
+
+## Overview
+This project implements a Python-based ETL pipeline that extracts raw housing data,
+cleans and transforms it, validates data quality, and loads an analytics-ready dataset.
+
+## Project Structure
+- data/raw: Original input dataset
+- data/processed: Cleaned output dataset
+- scripts: ETL pipeline code
+- notebooks: Data exploration and visualization
+
+## How to Run
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run the ETL pipeline:
+   python scripts/etl_pipeline.py
+
+## Output
+- Cleaned dataset saved to:
+  data/processed/clean_housing_data.csv
+
+## Features
+- Modular ETL design
+- Missing value handling
+- Data validation checks
+- Analytics-ready output
