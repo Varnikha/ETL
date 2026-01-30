@@ -14,7 +14,7 @@ X = df.drop(target, axis=1)
 y = df[target]
 
 # 3. Encode categorical variables
-X = pd.get_dummies(X, drop_first=True)  # avoids dummy variable trap
+X = pd.get_dummies(X, drop_first=True)  
 
 # 4. Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(
@@ -47,7 +47,7 @@ plt.ylabel("Predicted Price")
 plt.title("Linear Regression: Actual vs Predicted Price")
 plt.show()
 
-# 9. Insights and Limitations
+# 9. Insights 
 print("\nInsights:")
 print("- The model predicts housing prices based on numeric and categorical features.")
 print("- Features like area, number of bedrooms, bathrooms, and furnishing status are influential.")
